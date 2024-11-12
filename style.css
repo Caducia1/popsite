@@ -1,0 +1,157 @@
+/* Définition des couleurs de la charte graphique */
+:root {
+    --jaune: #ffd400;
+    --vert: #5cc6ac;
+    --rose: #ef4977;
+    --gris: #333;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Style du header et du footer avec le gris */
+header, footer {
+    background-color: var(--gris);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-weight: 900; /* Roboto Black */
+}
+
+/* Navigation en gris foncé avec liens en blanc */
+nav {
+    background-color: var(--gris);
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 100; /* Roboto Thin */
+}
+
+main {
+    padding: 20px;
+}
+
+.section {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: white;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery div {
+    margin: 10px;
+    text-align: center;
+}
+
+.gallery img {
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Formulaire avec fond gris clair */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    color: #333; /* Texte en couleur sombre */
+    background-color: #fff; /* Fond des champs en blanc */
+}
+
+input[type="submit"] {
+    background-color: var(--gris);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: 900; /* Roboto Black */
+}
+
+input[type="submit"]:hover {
+    background-color: var(--rose);
+}
+
+label {
+    color: #333; /* Couleur sombre pour les labels */
+}
+
+/* Couleurs appliquées dans les sections */
+.presentation {
+    background-color: var(--jaune);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-weight: 100; /* Roboto Thin */
+}
+
+.bestsellers {
+    background-color: var(--vert);
+    color: white;
+    padding: 20px;
+}
+
+.contact {
+    background-color: var(--rose);
+    color: white;
+    padding: 20px;
+}
+
+/* Section pour la charte graphique */
+.chart {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+.chart img {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.chart p {
+    font-weight: 900; /* Roboto Black */
+    margin-top: 10px;
+    color: var(--gris);
+}
+
+/* Style supplémentaire pour les titres */
+h1, h2 {
+    font-weight: 900; /* Roboto Black */
+}

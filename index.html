@@ -1,0 +1,218 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop&Art - Wireframe</title>
+    
+    <!-- Lien vers la police Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap" rel="stylesheet">
+
+    <style>
+        /* Définition des couleurs de la charte graphique */
+        :root {
+            --jaune: #ffd400;
+            --vert: #5cc6ac;
+            --rose: #ef4977;
+            --gris: #333;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        /* Style du header et du footer avec le gris */
+        header, footer {
+            background-color: var(--gris);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-weight: 900; /* Roboto Black */
+        }
+
+        /* Navigation en gris foncé avec liens en blanc */
+        nav {
+            background-color: var(--gris);
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 100; /* Roboto Thin */
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .section {
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: white;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .gallery div {
+            margin: 10px;
+            text-align: center;
+        }
+
+        .gallery img {
+            max-width: 200px;
+            height: auto;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        /* Formulaire avec fond gris clair */
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+        }
+
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            color: #333; /* Texte en couleur sombre */
+            background-color: #fff; /* Fond des champs en blanc */
+        }
+
+        input[type="submit"] {
+            background-color: var(--gris);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-weight: 900; /* Roboto Black */
+        }
+
+        input[type="submit"]:hover {
+            background-color: var(--rose);
+        }
+
+        label {
+            color: #333; /* Couleur sombre pour les labels */
+        }
+
+        /* Couleurs appliquées dans les sections */
+        .presentation {
+            background-color: var(--jaune);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-weight: 100; /* Roboto Thin */
+        }
+
+        .bestsellers {
+            background-color: var(--vert);
+            color: white;
+            padding: 20px;
+        }
+
+        .contact {
+            background-color: var(--rose);
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pop&Art - Wireframe</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Produits</a></li>
+            <li><a href="#">À propos</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Section Présentation avec fond jaune -->
+        <section class="section presentation">
+            <h2>Notre entreprise</h2>
+            <div class="graphic-placeholder">
+                <img src="images/presentation.jpg" alt="Présentation entreprise" />
+            </div>
+            <p>
+                Pop&Art est une entreprise fondée en juin 2023, spécialisée dans la vente d'objets de collection artisanaux en lien avec la pop culture. 
+                Son objectif est de proposer des objets uniques et originaux, en édition limitée, avec une forte influence de l'univers des mangas et des films. 
+                L'entreprise, située à Lyon, compte actuellement cinq membres : le PDG, une graphiste, un commercial, une cheffe de projet, et un vendeur en boutique. 
+                Pop&Art ambitionne de se développer à travers la France, en ouvrant de nouvelles boutiques dédiées à la culture pop et aux produits exclusifs.
+            </p>
+        </section>
+
+        <!-- Section Best-sellers avec fond vert -->
+        <section class="section bestsellers">
+            <h2>Best-sellers</h2>
+            <div class="gallery">
+                <div>
+                    <img src="https://www.madcityzen.fr/wp-content/uploads/2020/12/pop-culture-lapin.jpg" alt="Objet Pop&Art 1">
+                    <p>Source : https://www.madcityzen.fr/</p>
+                </div>
+                <div>
+                    <img src="https://www.hitek.fr/42/artiste-pop-culture-facon-van-gogh_4898" alt="Objet Pop&Art 2">
+                    <p>Source : https://hitek.fr/42/artiste-pop-culture-facon-van-gogh_4898</p>
+                </div>
+                <div>
+                    <img src="https://journalmetro.com/wp-content/uploads/2021/01/anatomie-jouets.jpg" alt="Objet Pop&Art 3">
+                    <p>Source : https://journalmetro.com/actualites/511453/anatomie-des-jouets/</p>
+                </div>
+                <div>
+                    <img src="https://gallerymurciano.com/wp-content/uploads/2019/09/r2d2-murciano.jpg" alt="Objet Pop&Art 4">
+                    <p>Source : http://gallerymurciano.com/</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Contact avec fond rose -->
+        <section class="section contact">
+            <h2>Formulaire de Contact</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <input type="submit" value="Envoyer">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Pop&Art © 2024- tous droits réservés</p>
+    </footer>
+</body>
+</html>
